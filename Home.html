@@ -1,0 +1,242 @@
+<!-- {% load static from staticfiles %}
+{% extends "layout.html" %}
+{% block content %} -->
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- CDN for CSS only : -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="layoutcss.css">
+  <title>Kite Connect 3.0</title>
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-static-top">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+      <a href=""><img src="data:image/png;base64,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" width="30" height="30" class="d-inline-block align-top" alt="Broken Image"></a>
+      <strong>Kite Connect 3.0</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="  navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+          <li class="nav-item active">
+          <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+        </li>
+        
+        <li class="nav-item">
+        <a class="nav-link" href="Pricing.html">Pricing</a>
+        </li>
+
+        <li class="nav-item">
+        <a class="nav-link" href="Aboutus.html">About Us</a>
+        </li>
+        <!-- <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li> -->
+      </ul>
+    </div>
+  </nav>
+</div>
+</nav>
+	<div class="jumbotron">
+  		<h1 class="display-4"><img src="https://kite.trade/docs/connect/v3/images/kite-connect.png" alt="Broken" width="20%" height="20%" /></h1>
+  		<p class="lead"><strong>Kite Connect is a set of REST-like HTTP APIs that expose many capabilities required to build a complete stock market investment and trading platform. It lets you execute orders in real time (equities, commodities, mutual funds), manage user portfolios, stream live market data over WebSockets, and more.</strong></p>
+  		<hr class="my-4">
+  		<p>Root API endpoint: <h5><a href="https://api.kite.trade"><strong><u>https://api.kite.trade</u></strong></h5></p></a>
+  		<strong>NOTE </strong><h6>To request a particular version of the API, set the HTTP header X-Kite-version: v where v is the version number, major or full (eg: 1 or 1.3 or 3)</h6>
+  		<a class="btn btn-primary btn-lg" href="https://kite.trade/docs/connect/v3/" role="button">View Entire Online Documentation</a>
+	</div>
+
+	<div class="container">
+		<h2>Libraries and SDKs:</h2>
+		<p>Below is a list of pre-built client libraries for Kite Connect written in various programming languages that can be used used to interact with the APIs without having to make raw HTTP calls.
+
+		Do note that the <u>3.0 version of these libraries on Github are in the kite3 branch.</u></p>
+		<ul>
+			<li><a href="https://github.com/zerodhatech/pykiteconnect/">Kite Connect Go library (Official)</a></li>
+			<li><a href="https://github.com/zerodhatech/gokiteconnect/">Kite Connect Java library (Official)</a></li>
+			<li><a href="https://github.com/zerodhatech/javakiteconnect/">Kite Connect PHP library (Official)</a></li>
+			<li><a href="https://github.com/zerodhatech/phpkiteconnect/">Kite Connect Node JS library (Official)</a></li>
+			<li><a href="https://github.com/zerodhatech/dotnetkiteconnect/">Kite Connect .Net/C# library (Official)</a></li>
+			<li><a href="https://github.com/zerodhatech/kiteconnect-rs">Kite Connect Rust (Official)</a></li>
+			<li><a href="https://github.com/QuantInsti/kiteconnect3">Kite Connect R (3rd party)</a></li>
+		</ul>
+
+		<div class="card bg-dark text-white">
+  <img src="https://cashoverflow.in/wp-content/uploads/2019/12/zerodha-logo-copy.png" class="card-img" alt="Zerodha">
+  <div class="card-img-overlay">
+    <p class="card-text"><h2><strong>We pioneered the discount broking model in India.
+Now, we are breaking ground with our technology.</strong></h2></p><br><br><br><br><br><br><br><br><br>
+	<a href="https://support.zerodha.com/category/trading-and-markets/kite-api"><h5 class="card-title">Visit Official Website</h5></a>
+  </div>
+</div>
+<br>
+<br>
+<form>
+  <h5>Enter Details Regarding Personal Queries:</h5>
+  <h6>We will contact you shortly!</h6>
+  <div class="form-row">
+    <div class="col-md-4 mb-3">
+      <label for="validationDefault01">First name</label>
+      <input type="text" class="form-control" id="validationDefault01" placeholder="First Name Here" required>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="validationDefault02">Last name</label>
+      <input type="text" class="form-control" id="validationDefault02" placeholder="Last Name Here" required>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="validationDefaultUsername">Username</label>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroupPrepend2" >@</span>
+        </div>
+        <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
+      </div>
+    </div>
+  </div><br>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationDefault03">City</label>
+      <input type="text" class="form-control" id="validationDefault03" required>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationDefault04">State</label>
+      <select class="custom-select" id="validationDefault04" required>
+        <option selected disabled value="">Choose...</option>
+        <option>...</option>
+      </select>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationDefault05">Zip</label>
+      <input type="text" class="form-control" id="validationDefault05" required>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+      <label class="form-check-label" for="invalidCheck2">
+        Agree to our List of Policies?
+      </label>
+    </div>
+  </div>
+  <button class="btn btn-primary" type="submit">Submit form</button>
+</form>
+<br><br>
+  <h3>--OR-- SIGN UP FOR FREE:
+  <a href="https://zerodha.com/open-account"><button type="button" class="btn btn-outline-warning">Sign Up!</button>
+  </a></h3>
+</div>
+<!-- Footer -->
+
+<footer class="page-footer font-small blue pt-4">
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+
+    <div class="jumbotron">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <h5 class="text-uppercase"></h5>
+        <p>
+          <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">
+              <img src="https://cashoverflow.in/wp-content/uploads/2019/12/zerodha-logo-copy.png" width="45%" height="45%" alt="Broken Image"><br>
+             <ion-icon name="person-add-outline"></ion-icon> <strong><u>+91 80 4718 1888</u></strong><br>
+            © 2010 - 2020, Zerodha Broking Ltd.<br>
+
+            All rights reserved
+            </div>
+            <!-- Copyright --></p>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h4 class="text-uppercase"><u>Beginner's Guide </u></h4>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Ticker_symbol">What are Trading Symbols?</a>
+          </li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Exchange_(organized_market)">What is an Exchange?</a>
+          </li>
+          <li>
+            <a href="https://www.investopedia.com/terms/s/stockmarket.asp">Stock Market Basics </a>
+          </li>
+          <li>
+            <a href="https://www.investopedia.com/ask/answers/12/difference-investing-trading.asp">Investing Vs Trading in Stocks </a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h6 class="text-uppercase"><u><strong>Follow Us:</u></strong></u>
+        <h5>
+        <ul class="list-unstyled">
+          <li>
+            <a href="https://www.facebook.com/Zerodha.Ind/"><ion-icon name="logo-facebook"></ion-icon></a>
+          </li>
+          <li>
+            <a href="https://github.com/zerodhatech/pykiteconnect"><ion-icon name="logo-github"></ion-icon></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/zerodha/?originalSubdomain=in"><ion-icon name="logo-linkedin"></ion-icon></a>
+          </li>
+          <li>
+            <a href="https://play.google.com/store/apps/details?id=com.zerodha.kite3&hl=en_IN"><ion-icon name="logo-google-playstore"></ion-icon></a>
+          </li>
+        </ul>
+      </h5>
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+  </div>
+
+  </div>
+  <!-- Footer Links -->
+
+  
+
+</footer>
+<!-- <div class="jumbotron">
+<div class="footer">
+  <img src="https://cashoverflow.in/wp-content/uploads/2019/12/zerodha-logo-copy.png" width="15%" height="15%" alt="Broken Image"> <br>
+  +91 80 4718 1888<br>
+  © 2010 - 2020, Zerodha Broking Ltd.<br>
+
+  All rights reserved
+</div>
+</div> -->
+<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+		
